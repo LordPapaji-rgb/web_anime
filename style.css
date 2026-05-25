@@ -174,16 +174,20 @@ button {
 
 .video-wrap {
   overflow: hidden;
-  background: black;
+  background: #05070a;
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-video::-webkit-media-controls-fullscreen-button {
+video {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
+  max-height: 80vh;
   object-fit: contain;
   background: #05070a;
 }
