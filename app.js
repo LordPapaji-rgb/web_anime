@@ -1,12 +1,12 @@
 let animeData = [
   {
     id: "anime-main",
-    title: "WebAnime Series",
+    title: "Redo of Healer",
     genres: ["Action", "Fantasy"],
     studio: "WebAnime",
     rating: "9.0",
     description: "Streaming anime dari folder video.",
-    poster: "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=900&q=80",
+    poster: "./video/network-7862055_1280.jpg",
     episodes: [
       { number: 1, title: "Episode 01", duration: "24m", src: "./video/eps01.mp4" },
       { number: 2, title: "Episode 02", duration: "24m", src: "./video/eps02.mp4" },
