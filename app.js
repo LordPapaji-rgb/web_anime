@@ -6,7 +6,7 @@ let animeData = [
     studio: "WebAnime",
     rating: "6.4",
     description: "berkisah tentang Keyaru yang memperoleh kekuatannya sebagai Pahlawan dengan spesialis dalam menyembuhkan semua luka terlepas dari tingkat keparahannya. Namun kekuatan ini juga menjadi penderitaan yang luar biasa bagi Keyaru. Hal ini karena, dia menjadi sasaran penyiksaan dan pelecehan yang kejam selama bertahun-tahun.",
-    poster: "https://cdns.klimg.com/kapanlagi.com/p/mv5bywm5ndg3odktnjnhys00njvlltgxytctzdyw.jpg",
+    poster: "./video/kaifuku_tumb.png",
     episodes: [
       { number: 1, title: "Episode 01", duration: "24m", src: "./video/eps01.mp4" },
       { number: 2, title: "Episode 02", duration: "24m", src: "./video/eps02.mp4" },
