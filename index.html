@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebAnime Watch</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="WebAnime Watch">
+      <span class="brand-mark">WA</span>
+      <span>WebAnime</span>
+    </a>
+
+    <label class="search">
+      <span>Cari</span>
+      <input id="searchInput" type="search" placeholder="Judul, genre, atau studio">
+    </label>
+
+    <button class="icon-button" id="themeToggle" type="button" aria-label="Ganti tema" title="Ganti tema">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main class="shell">
+    <section class="local-loader">
+      <div>
+        <p class="eyebrow">Video Lokal</p>
+        <h2>Pilih folder video untuk menampilkan film di beranda</h2>
+      </div>
+      <label class="folder-button">
+        <input id="folderInput" type="file" accept="video/*" webkitdirectory multiple>
+        Pilih Folder Video
+      </label>
+    </section>
+
+    <section class="watch-area" aria-labelledby="watchTitle">
+      <div class="video-wrap">
+        <video id="videoPlayer" controls poster="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?auto=format&fit=crop&w=1600&q=80">
+          <source id="videoSource" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+          Browser Anda tidak mendukung pemutar video.
+        </video>
+      </div>
+
+      <div class="watch-meta">
+        <div>
+          <p class="eyebrow" id="currentGenre">Action • Fantasy</p>
+          <h1 id="watchTitle">Shinrai no Sora</h1>
+          <p id="watchDescription">Seorang pelajar biasa menemukan kota terapung yang hanya muncul saat hujan meteor.</p>
+        </div>
+        <div class="watch-actions">
+          <button class="primary" id="watchNow" type="button">Putar</button>
+          <button class="secondary" id="saveButton" type="button">Simpan</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="episode-panel" aria-labelledby="episodeHeading">
+      <div class="panel-heading">
+        <h2 id="episodeHeading">Episode</h2>
+        <span id="episodeCount">0</span>
+      </div>
+      <div class="episode-list" id="episodeList"></div>
+    </aside>
+
+    <section class="filters" aria-label="Filter genre">
+      <button class="chip is-active" type="button" data-genre="all">Semua</button>
+      <button class="chip" type="button" data-genre="Action">Action</button>
+      <button class="chip" type="button" data-genre="Fantasy">Fantasy</button>
+      <button class="chip" type="button" data-genre="Romance">Romance</button>
+      <button class="chip" type="button" data-genre="Comedy">Comedy</button>
+      <button class="chip" type="button" data-genre="Sci-Fi">Sci-Fi</button>
+      <button class="chip" type="button" data-genre="Lokal">Lokal</button>
+    </section>
+
+    <section class="section-block">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Katalog</p>
+          <h2>Anime Pilihan</h2>
+        </div>
+        <span id="resultCount"></span>
+      </div>
+      <div class="anime-grid" id="animeGrid"></div>
+    </section>
+  </main>
+
+  <template id="animeCardTemplate">
+    <article class="anime-card">
+      <button class="poster-button" type="button">
+        <img alt="">
+        <span class="badge"></span>
+      </button>
+      <div class="card-copy">
+        <h3></h3>
+        <p></p>
+      </div>
+    </article>
+  </template>
+
+  <template id="episodeTemplate">
+    <button class="episode-item" type="button">
+      <span class="episode-number"></span>
+      <span class="episode-copy">
+        <strong></strong>
+        <small></small>
+      </span>
+    </button>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
