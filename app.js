@@ -22,6 +22,24 @@ let animeData = [
       { number: 12, title: "Episode 12", duration: "24m", src: "./video/eps12.mp4" }
     ]
   }
+  
+  {
+    id: "black-clover-movie",
+    title: "Black Clover: Sword of the Wizard King",
+    genres: ["Action", "Adventure", "Fantasy"],
+    studio: "Studio Pierrot",
+    rating: "7.4",
+    description: "Di dunia di mana sihir adalah segalanya, Asta, seorang anak laki-laki yang lahir tanpa sihir, bercita-cita menjadi Raja Penyihir untuk mengatasi kesulitan, membuktikan kekuatannya, dan menepati sumpahnya kepada teman-temannya.",
+    poster: "./video/black_clover_SWK_tumb.png",
+    episodes: [
+      {
+        number: 1,
+        title: "Movie",
+        duration: "1h 53m",
+        src: "./video/black-clover-movie.mp4"
+      }
+    ]
+  }
 ];
 
 const fallbackVideo =
